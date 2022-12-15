@@ -8,7 +8,6 @@ cimport cython
 
 def ssk(s, t, int n, float lbda, accum=False):
     """s and t are strings, either numpy.str_ or python str, or a list of chars"""
-    #print(s)
     s_array = array.array('l', [ord(c) for c in s])
     t_array = array.array('l', [ord(c) for c in t])
     return ssk_array(s_array, t_array, n, lbda, accum)
