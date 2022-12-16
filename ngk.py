@@ -66,14 +66,14 @@ def ngkGmats(trainDocs,testDocs, n=2, mode='char', norm=True):
     
     ngkTrainKmat = np.ones((nTrainDocs,nTrainDocs))
 
-    for i in xrange( 0, nTrainDocs ):
-        for j in xrange(0,nTrainDocs):
+    for i in range( 0, nTrainDocs ):
+        for j in range(0,nTrainDocs):
             ngkTrainKmat[i][j] = np.dot(featVecsTrain[i], featVecsTrain[j])
     
     ngkTestKmat = np.ones((nTestDocs,nTrainDocs))
 
-    for i in xrange( 0, nTestDocs ):
-        for j in xrange(0,nTrainDocs):
+    for i in range( 0, nTestDocs ):
+        for j in range(0,nTrainDocs):
             ngkTestKmat[i][j] = np.dot(featVecsTest[i], featVecsTrain[j])
     
     return ngkTrainKmat, ngkTestKmat

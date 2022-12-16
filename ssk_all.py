@@ -31,11 +31,11 @@ def get_kernel_shugun (docs, n, lam):
                 # print "before update: ", i, j, k
                 # print Kp
                 Kpp = lam * (Kpp + lam * int(a[j] == b[k]) * Kp[i, j, k])
-                print a[j], b[k], Kpp, Kp[i+1, j, k+1] 
+                print(a[j], b[k], Kpp, Kp[i+1, j, k+1])
                 # print "lam * (Kpp + lam * int(a[j] == b[k]) * Kp[i, j, k]),  lam * Kp[i+1, j, k+1] + Kpp"
                 Kp[i+1, j+1, k+1] = lam * Kp[i+1, j, k+1] + Kpp
     
-    print Kp
+    print(Kp)
     K = 0.0
     # for i in range(n):
     for j in range(len(a)):
