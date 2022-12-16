@@ -1,0 +1,5 @@
+,category,ime ljuske,lambda,f1_mean,f1_std,precision_mean,precision_std,recall_mean,recall_std
+0,earn,NGK,0,0.945,0.037,0.945,0.037,0.945,0.037
+0,acq,NGK,0,0.952,0.039,0.952,0.039,0.952,0.039
+0,crude,NGK,0,0.887,0.079,0.887,0.079,0.887,0.079
+0,corn,NGK,0,0.81,0.083,0.81,0.083,0.81,0.083
