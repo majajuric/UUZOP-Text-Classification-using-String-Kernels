@@ -6,14 +6,13 @@
 #-------------------------------------------------------------------------------------
 
 import re
-from nltk.corpus import stopwords # Import the stop word list
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 import numpy as np
 import pickle
 
 def wk(doc1, doc2):
-    #print "Creating the bag of words...\n"
+    print("Starting WK, creating bag of words...\n")
     clean_docs = [doc1,doc2]
     #defaultanalyzer "word" removes non-chars in preprocessing and tokenizes words. does not remove "markup tokens"
     #stop_words should be "english" if not using clean_input_docs()
